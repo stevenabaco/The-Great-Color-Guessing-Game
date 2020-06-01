@@ -12,7 +12,7 @@ init();
 
 function init() {
   setupModeButtons();
-  setupSquareListeners();
+  setupSquares();
   reset();
 }
 
@@ -28,7 +28,7 @@ function setupModeButtons(){
    }
 }
 
-function setupSquareListeners {
+function setupSquares () {
   for (let i = 0; i < squares.length; i++){
     //add click listeners to squares
     squares[i].addEventListener("click", function(){
@@ -47,6 +47,7 @@ function setupSquareListeners {
     });
   }
 }
+
 function reset(){
   colors = generateRandomColors(numSquares);
   //pick a new random color from array
